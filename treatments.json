@@ -1,0 +1,109 @@
+{
+  "1": [
+    {
+      "id": "TREAT-1678886400000",
+      "clinical": {
+        "diagnosisCode": "M17.11",
+        "procedureCode": "27447",
+        "procedureName": "Total Knee Arthroplasty",
+        "procedureDate": "2024-05-10"
+      },
+      "eligibilityResponse": {
+        "eligible": true,
+        "preAuthRequired": true,
+        "planBenefits": {
+          "copay": 40,
+          "deductible": 1000,
+          "deductibleRemaining": 350,
+          "coinsurance": "20%",
+          "coveragePercent": 80
+        },
+        "evidence": [
+          "CPT 27447 is a covered benefit under Blue Cross.",
+          "Prior Authorization is required for surgical orthopedic procedures.",
+          "Diagnosis M17.11 meets medical necessity criteria."
+        ],
+        "metadata": {
+          "requestId": "ELIG-12345",
+          "timestamp": "2024-05-09T10:00:00Z"
+        }
+      },
+      "preAuthResponse": {
+        "preAuthId": "PA-54321",
+        "status": "Submitted",
+        "paRequired": true,
+        "aiAssessment": {
+          "medicalNecessityMet": true,
+          "evidence": [
+            "Provided imaging confirms severe osteoarthritis.",
+            "Surgical intervention aligns with plan guidelines.",
+            "All supporting documents provided."
+          ]
+        },
+        "turnaroundTime": "72 hours",
+        "metadata": {
+          "timestamp": "2024-05-09T11:00:00Z"
+        }
+      }
+    }
+  ],
+  "3": [
+     {
+      "id": "TREAT-1678886400001",
+      "clinical": {
+        "diagnosisCode": "I25.10",
+        "procedureCode": "92928",
+        "procedureName": "Stent Placement",
+        "procedureDate": "2024-04-20"
+      },
+      "eligibilityResponse": {
+        "eligible": true,
+        "preAuthRequired": false,
+        "planBenefits": {
+          "copay": 50,
+          "deductible": 1500,
+          "deductibleRemaining": 800,
+          "coinsurance": "15%",
+          "coveragePercent": 85
+        },
+        "evidence": [
+          "CPT 92928 is a covered urgent procedure.",
+          "Prior Authorization is not required for emergency cardiac procedures."
+        ],
+        "metadata": {
+          "requestId": "ELIG-67890",
+          "timestamp": "2024-04-19T14:00:00Z"
+        }
+      },
+      "preAuthResponse": null
+    },
+    {
+      "id": "TREAT-1678886400002",
+      "clinical": {
+        "diagnosisCode": "E11.9",
+        "procedureCode": "99214",
+        "procedureName": "Follow-up Visit",
+        "procedureDate": "2024-03-15"
+      },
+      "eligibilityResponse": {
+        "eligible": true,
+        "preAuthRequired": false,
+        "planBenefits": {
+          "copay": 25,
+          "deductible": 1500,
+          "deductibleRemaining": 1000,
+          "coinsurance": "15%",
+          "coveragePercent": 85
+        },
+        "evidence": [
+          "CPT 99214 is covered for chronic condition management."
+        ],
+        "metadata": {
+          "requestId": "ELIG-67891",
+          "timestamp": "2024-03-14T09:30:00Z"
+        }
+      },
+      "preAuthResponse": null
+    }
+  ]
+}

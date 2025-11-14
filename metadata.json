@@ -1,0 +1,5 @@
+{
+  "name": "Hospital Insurance Portal",
+  "description": "A comprehensive portal for managing patient insurance eligibility checks and pre-authorizations. It features a dashboard with key performance indicators, a searchable patient list, and a step-by-step workflow for new checks.",
+  "requestFramePermissions": []
+}
